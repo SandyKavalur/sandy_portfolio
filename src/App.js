@@ -5,7 +5,8 @@ import { Route, Redirect, Switch, useLocation } from 'react-router-dom';
 import About from './components/about/About';
 import Resume from './components/Resume';
 import Projects from './components/Projects';
-import { AnimatePresence } from 'framer-motion'
+import { AnimatePresence } from 'framer-motion';
+import Contact from './components/contact';
 
 function App() {
 
@@ -31,6 +32,9 @@ function App() {
                 </Route>
                 <Route path="/resume">
                   <Resume />
+                </Route>
+                <Route path="/contact">
+                  <Contact />
                 </Route>
                 <Route path="/projects" component={Projects} />
                 <Route>
